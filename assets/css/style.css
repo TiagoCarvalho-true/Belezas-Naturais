@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -10,6 +11,7 @@ header{
     height: 55px;
     padding: 15px;
     margin-bottom: 25px;
+    
     
 }
 header img{
@@ -24,13 +26,13 @@ header a{
     margin: 70px;  
     text-decoration: none;
     color: antiquewhite;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
    
 }
 header a:hover{
-    text-decoration: overline;
-    color: #000000;
-    
+    border-radius: 12px;
+    background-color: #d14e57;
+   
 }
 main{
     padding: 55px;
