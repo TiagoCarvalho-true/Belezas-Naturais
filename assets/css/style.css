@@ -23,19 +23,23 @@ header img{
 }
 header a{
     padding: 3px 20px; 
-    margin: 70px;  
+    margin: 88px;  
     text-decoration: none;
     color: antiquewhite;
     font-size: 1.5rem;
+    animation-duration: 3s;
+    animation-name: slidein;
+    transition: .5s; 
    
 }
+
 header a:hover{
-    border-radius: 12px;
+    border-radius: 12px ;
     background-color: #d14e57;
-   
+
 }
 main{
-    padding: 55px;
+    padding: 45px;
     background-color: #ecd4d5;
     width: 950px;
     border-radius: 15px;
@@ -44,11 +48,12 @@ main{
     margin-bottom: 55px;
     color: #d14e57;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-
+   
 }
 main h1{
     font-size: 1.8rem;
     margin-bottom: 17px;
+    text-align: center;
 }
 .paralax{
     background-image: url('/assets/imgs/Paralax\ 1.jpeg');
