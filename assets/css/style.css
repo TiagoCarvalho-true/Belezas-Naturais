@@ -56,7 +56,7 @@ main h1{
     text-align: center;
 }
 .paralax{
-    background-image: url('/assets/imgs/Paralax\ 1.jpeg');
+    background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmpxYXNjNG1jOW91Zzdxang2YzhkanEzYXdsNGNuN21xb2N2N3dtMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EuiC52tWm5yCc/giphy.gif);
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -89,6 +89,11 @@ footer{
     padding-top: 35px;
 
 }
+footer img{
+    display: inline;
+    width: 25px;
+}
+footer
 .header-p{
     padding: 5px;
     margin: 0;
