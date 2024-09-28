@@ -101,3 +101,64 @@ footer
 iframe{
     border-radius: 15px;
 }
+
+@media (max-width: 768px) {
+    main {
+        width: 80%;
+        margin-left: 5%;
+        padding: 20px;
+    }
+
+    section img {
+        width: 100%;
+    }
+ 
+    header a {
+        margin: 40px;
+        font-size: 1.1rem;
+        
+    }
+    iframe{
+        width: 70%;
+        height: 50%;
+    }
+}
+
+/* Estilo para dispositivos com largura máxima de 480px */
+@media (max-width: 430px) {
+    header {
+        height: auto;
+        padding: 10px;
+    }
+
+    header img {
+        width: 40px;
+        padding: 10px;
+    }
+
+    header nav a {
+        text-align: right;
+        margin: 3px;
+        font-size: 0.7rem;
+        display: block;
+        
+    }
+
+    main {
+        width: 100%;
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
