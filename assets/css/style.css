@@ -2,7 +2,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Nanum Gothic Coding", monospace;
     
 }
 header{
@@ -10,8 +10,11 @@ header{
     width: 100%;
     height: 55px;
     padding: 15px;
-    margin-bottom: 25px;
-    
+    margin-bottom: 25px;    
+}
+body{
+    border: 2px solid #F96E78;
+    border-radius: 15px;
     
 }
 header img{
@@ -22,8 +25,9 @@ header img{
      top: 0;
 }
 header a{
+    text-align: center;
     padding: 3px 20px; 
-    margin: 88px;  
+    margin: 78px;  
     text-decoration: none;
     color: antiquewhite;
     font-size: 1.5rem;
@@ -40,20 +44,27 @@ header a:hover{
 }
 main{
     padding: 45px;
-    background-color: #ecd4d5;
+  
     width: 950px;
     border-radius: 15px;
     position: relative;
     margin-left: 150px;
     margin-bottom: 55px;
-    color: #d14e57;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-   
+    color: #ffffff;
+    font: 600;
+ 
 }
 main h1{
     font-size: 1.8rem;
     margin-bottom: 17px;
     text-align: center;
+    cursor: pointer;
+}
+main p{
+    font-size: 1.3rem;
+}
+main h1, main p{
+    text-shadow: -1px -1px 0 #fa7979, 1px -1px 0 #f09c9c, -1px 1px 0 #f78f8f, 1px 1px 0 #f79494; /* Cria uma sombra em cada direção */
 }
 .paralax{
     background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmpxYXNjNG1jOW91Zzdxang2YzhkanEzYXdsNGNuN21xb2N2N3dtMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EuiC52tWm5yCc/giphy.gif);
@@ -100,7 +111,13 @@ footer
 }
 iframe{
     border-radius: 15px;
+    width: 86%;
+    height: 400px;
 }
+.container{
+    text-align: center;
+}
+
 
 @media (max-width: 768px) {
     main {
@@ -119,8 +136,8 @@ iframe{
         
     }
     iframe{
-        width: 70%;
-        height: 50%;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -138,7 +155,7 @@ iframe{
 
     header nav a {
         text-align: right;
-        margin: 3px;
+        margin: 2px;
         font-size: 0.7rem;
         display: block;
         
@@ -160,5 +177,8 @@ iframe{
 
     section p {
         font-size: 1rem;
+    }
+    .paralax{
+        height: 300px;
     }
 }

@@ -6,7 +6,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="icon" type="image/x-icon" href="/assets/imgs/favicon.ico">
    <title>Belezas da Holanda</title>
+   <!--css-->
    <link rel="stylesheet" href="/assets/css/style.css">
+   <!--Fonts-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,15 +19,16 @@
    <header>
       <img src="/assets/imgs/logo.png" alt="">
       <nav>
-      <a href="/pages/Diversidade.html" rel="noopener">Diversidade</a>
-      <a href="/pages/relevantes.html" rel="noopener">Aspectos Relevantes</a>
-      <a href="/pages/index.html" rel="noopener">Home</a>
+         <a href="/pages/Diversidade.html" rel="noopener">Diversidade</a>
+         <a href="/pages/relevantes.html" rel="noopener">Aspectos Relevantes</a>
+         <a href="/pages/index.html" rel="noopener">Home</a>
       </nav>
    </header>
    <div class="paralax">
       <main>
-         <h1>Conhecendo as belezas da <Span>Holanda</Span></h1>
-         <P>A Holanda, conhecida por suas paisagens encantadoras e rica herança cultural, é um destino que encanta
+         <h1 onclick="toggleText()">Conhecendo as belezas da Holanda</h1>
+         <P style="display: none;" id="content">A Holanda, conhecida por suas paisagens encantadoras e rica herança cultural, é
+            um destino que encanta
             visitantes de todo o mundo. Este país europeu, famoso por seus icônicos moinhos de vento, campos de tulipas
             e canais pitorescos, oferece uma combinação única de belezas naturais e inovação humana. Neste texto,
             exploraremos as atrações naturais da Holanda, sua diversidade ecológica impressionante, aspectos geográficos
@@ -30,6 +36,9 @@
             entre o homem e a natureza.</P>
       </main>
    </div>
+<div class="container">
+
+
    <section>
       <h2>Atrações Naturais</h2>
 
@@ -41,8 +50,7 @@
       <img src="/assets/imgs/canais 2.jpeg" alt="">
       <iframe
          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19487.49638995885!2d4.87394297032681!3d52.37156146115087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c05b1b1103%3A0x21067a7298a3961a!2sCanais%20de%20Amsterdam!5e0!3m2!1spt-BR!2sbr!4v1725722926066!5m2!1spt-BR!2sbr"
-         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-         referrerpolicy="no-referrer-when-downgrade"></iframe>
+         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
       <p><strong>Parque Nacional Hoge Veluwe: </strong> Este parque é um verdadeiro tesouro natural, cobrindo
@@ -54,8 +62,7 @@
       <p class="header-p">Acesse aqui, e seja bem vindo ao Parque Nacional Hoge Veluwe: </p>
       <iframe
          src="https://www.google.com/maps/embed?pb=!4v1725723146861!6m8!1m7!1sGs80EnAgpBPcZhmzAHSHqQ!2m2!1d52.09773005788607!2d5.829432252743619!3f240!4f0!5f0.7820865974627469"
-         width="950" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-         referrerpolicy="no-referrer-when-downgrade"></iframe>
+         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <p><strong> Keukenhof:</strong> Conhecido como o “Jardim da Europa”, o Keukenhof é um dos maiores jardins de
          flores do mundo. Localizado em Lisse, o parque cobre uma área de 32 hectares e é famoso por suas espetaculares
          exibições de tulipas, narcisos e outras flores de primavera. O Keukenhof abre suas portas apenas por algumas
@@ -63,16 +70,19 @@
       <img src="/assets/imgs/Keukenhof.jpeg" alt="">
       <img src="/assets/imgs/Keukenhof 1.jpeg" alt="">
    </section>
+</div>
    <footer>
 
       <p>Assista um Documentario completo:</p>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/m3cV5KtQzZ4?si=kSKRGNU8Bdcb4_hV"
-         title="YouTube video player" frameborder="0"
+      <iframe src="https://www.youtube.com/embed/m3cV5KtQzZ4?si=kSKRGNU8Bdcb4_hV" title="YouTube video player"
+         frameborder="0"
          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         <br>
-      <b>&copy;Todos os direitos reservados</b><span> TiagoCarvalho-true</span><img src="/assets/imgs/github.jpeg" alt="">
+      <br>
+      <b>&copy;Todos os direitos reservados</b><span> TiagoCarvalho-true</span><img src="/assets/imgs/github.jpeg"
+         alt="">
    </footer>
+   <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
