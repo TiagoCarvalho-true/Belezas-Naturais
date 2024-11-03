@@ -1,77 +1,86 @@
 /*Mains*/
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: "Nanum Gothic Coding", monospace;
-    
+
 }
-body{
+
+body {
     border: 2px solid #F96E78;
     border-radius: 15px;
-    
+
 }
+
 /*Menu*/
-header{
-    background:#F96E78;
+header {
+    background: #F96E78;
     width: 98%;
     height: 55px;
     padding: 15px;
     margin-bottom: 25px;
-    border-radius: 15px;    
+    border-radius: 15px;
 }
-header img{
+
+header img {
     width: 55px;
     padding: 15px;
     border-radius: 25px;
-     position: absolute;
-     top: 0;
+    position: absolute;
+    top: 0;
 }
-header a{
+
+header a {
     text-align: center;
-    padding: 3px 20px; 
-    margin: 78px;  
+    padding: 3px 20px;
+    margin: 78px;
     text-decoration: none;
     color: antiquewhite;
     font-size: 1.5rem;
     animation-duration: 3s;
     animation-name: slidein;
-    transition: .5s; 
+    transition: .8s;
     border-radius: 5px;
-   
+
 }
 
-header a:hover{
+header a:hover {
     border-radius: 0px 12px;
     background-color: #d14e57;
     font-size: 1.6rem;
 }
+
 /*page*/
-main{
+main {
     padding: 45px;
-  
     width: 950px;
     border-radius: 15px;
     position: relative;
     margin-left: 150px;
-    margin-bottom: 55px;
+    margin-bottom: 25px;
     color: #ffffff;
     font: 600;
- 
+
 }
-main h1{
+
+main h1 {
     font-size: 1.8rem;
     margin-bottom: 17px;
     text-align: center;
     cursor: pointer;
 }
-main p{
+
+main p {
     font-size: 1.3rem;
     transition: 4s;
 }
-main h1, main p{
-    text-shadow: -1px -1px 0 #fc5353, 1px -1px 0 #f78888, -1px 1px 0 #f78f8f, 1px 1px 0 #f79494; /* Cria uma sombra em cada direção */
+
+main h1,
+main p {
+    text-shadow: -1px -1px 0 #fc5353, 1px -1px 0 #f78888, -1px 1px 0 #f78f8f, 1px 1px 0 #f79494;
 }
-.paralax{
+
+.paralax {
     background-image: url(/assets/imgs/paralax3.gif);
     height: 500px;
     background-attachment: fixed;
@@ -79,59 +88,71 @@ main h1, main p{
     background-repeat: no-repeat;
     background-size: cover;
 }
-section{
-    background-color:#FCC2C6;
+
+section {
+    background-color: #FCC2C6;
     color: #d14e57;
     text-align: center;
     padding: 50px;
 }
-section h2{
+
+section h2 {
     padding: 25px;
     font-size: 2.5rem;
 }
-section p{
+
+section p {
     font-size: 1.2rem;
     padding: 25px;
     margin-bottom: 25px;
 }
-section img{
+
+section img {
     width: 599px;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 
 }
-footer{
+
+footer {
+    clear: both;
     padding-left: 250px;
     padding-top: 35px;
 
 }
-footer img{
+
+footer img {
     display: inline;
     width: 25px;
 }
 
-.header-p{
+.header-p {
     padding: 5px;
     margin: 0;
 }
-iframe{
+
+iframe {
     border-radius: 15px;
     width: 86%;
     height: 400px;
 }
-.container{
+
+.container {
     text-align: center;
     margin-bottom: 16px;
 }
-.container h2{
+
+.container h2 {
     color: #fc5353;
 }
-.container ol{
+
+.container ol {
     list-style-type: none;
     width: 90%;
     margin: 20px;
 }
-.container ol li{
+
+.container ol li {
     text-align: left;
     color: #d14e57;
     margin: 5px;
@@ -149,13 +170,14 @@ iframe{
     section img {
         width: 100%;
     }
- 
+
     header a {
         margin: 40px;
         font-size: 1.1rem;
-        
+
     }
-    iframe{
+
+    iframe {
         width: 100%;
         height: auto;
     }
@@ -178,7 +200,7 @@ iframe{
         margin: 2px;
         font-size: 0.7rem;
         display: block;
-        
+
     }
 
     main {
@@ -198,16 +220,19 @@ iframe{
     section p {
         font-size: 1rem;
     }
-    .paralax{
+
+    .paralax {
         height: 300px;
     }
 
 }
+
 /*configs depois de implementar js*/
-#gallery img{
+#gallery img {
     cursor: pointer;
 }
-#gallery h1{
+
+#gallery h1 {
     font-size: 1.9rem;
     text-overflow: ellipsis;
     font-weight: 800;
@@ -234,30 +259,69 @@ iframe{
     max-height: 90%;
     border-radius: 8px;
 }
+
 .active {
     background-color: #d14e57;
 }
-fieldset{
+
+#final p {
+    float: right;
+    font-size: 1, 5rem;
+    width: 350px;
+
+}
+
+fieldset {
     text-align: center;
-    display: inline;
-    margin-left: 200px;
-    margin-right: 200px;
+    align-items: center;
+    justify-items: center;
+    width: 350px;
     border-radius: 15px;
-    border-color: #d14e57;
-    background-color: #e6cfcf;
+    border: 0px;
+    background: radial-gradient(circle, #ff7e5f, #fcba88);
     padding: 15px;
+    margin-top: 12px;
+    box-shadow: 5px 10px 10px rgba(241, 183, 183, 0.5);
+    float: left;
 }
-#feedbackForm{
-      display: inline;
-      justify-content: center;
-      justify-items: center;
-      align-items: center;
+
+#feedbackForm {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
-#feedbackForm label{
+
+#feedbackForm label {
+    color: #f0f8ff;
+    text-shadow: -1px -1px 0 #fc5353, 1px -1px 0 #f78888, -1px 1px 0 #f78f8f, 1px 1px 0 #f79494;
+    font-size: 1.2rem;
+}
+
+#feedbackForm input {
+    background-color: #f5afaf;
+    border: 0px;
+    border-radius: 5px;
+    width: 300px;
+    height: 30px;
+}
+
+#feedbackForm textarea {
     color: #d14e57;
-    font-size: 1.3rem;
+    width: 350px;
+    height: 200px;
+    border: #d14e57;
+    background-color: #f5afaf;
+    border-radius: 5px;
 }
-#feedbackForm textarea{
-    color: #d14e57;
-    font-size: 1.3rem;
+
+#feedbackForm button {
+    width: 130px;
+    height: 25px;
+    border-radius: 12px 5px;
+    border-left-color: #fc9c53;
+    border-top-color: #fc9c53;
+    border-right-color: #fc5353;
+    border-bottom-color: #d14e57;
+    background: #f89191;
+    color: #f0f8ff;
 }

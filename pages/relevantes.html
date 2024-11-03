@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
     <!--Libs e APIs-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
 </head>
 
@@ -22,19 +24,19 @@
     <header>
         <img src="/assets/imgs/logo.png" alt="">
         <nav>
-            <a href="/pages/Diversidade.html" rel="noopener">Diversidade</a>
-            <a href="/pages/relevantes.html" rel="noopener">Aspectos Relevantes</a>
-            <a href="/pages/index.html" rel="noopener">Home</a>
+            <a href="/pages/Diversidade.html" rel="noopener" data-aos="fade-up">Diversidade</a>
+            <a href="/pages/relevantes.html" rel="noopener" data-aos="fade-up">Aspectos Relevantes</a>
+            <a href="/pages/index.html" rel="noopener" data-aos="fade-up">Home</a>
         </nav>
     </header>
     <div class="paralax">
         <main>
-            <h1>Arraste para baixo</h1>
+            <h1 data-aos="zoom-in">Arraste para baixo</h1>
 
     </div>
     <div class="container">
-        <h2>Fique ligado nas nossas dicas 🧐🤔✋</h2>
-        <ol>
+        <h2 data-aos="zoom-in">Fique ligado nas nossas dicas 🧐🤔✋</h2>
+        <ol data-aos="zoom-out">
             <li>Planeje com Antecedência: A Holanda é um destino popular, então é uma boa ideia reservar hotéis e
                 passeios
                 com antecedência.</li>
@@ -75,34 +77,38 @@
 
     <section id="gallery">
 
-        <h1>Nossa Galeria de imagens do site 🤓</h1>
+        <h1 data-aos="zoom-in">Nossa Galeria de imagens do site 🤓</h1>
 
-        <img src="/assets/imgs/Dique Afsluitdijk 1.jpeg" alt="Image 1">
-        <img src="/assets/imgs/Dunas de Loonse e Drunense 1.jpeg" alt="Image 2">
-        <img src="/assets/imgs/Dunas de Loonse e Drunense.jpeg" alt="Image 3">
-        <img src="/assets/imgs/Parque Nacional Hoge Veluwe 2.jpeg" alt="Image 4">
-        <img src="/assets/imgs/canais 2.jpeg" alt="Image 5">
-        <img src="/assets/imgs/canais 3.jpeg" alt="Image 5">
+        <img src="/assets/imgs/Dique Afsluitdijk 1.jpeg" alt="Image 1" data-aos="fade-left">
+        <img src="/assets/imgs/Dunas de Loonse e Drunense 1.jpeg" alt="Image 2" data-aos="fade-right">
+        <img src="/assets/imgs/Dunas de Loonse e Drunense.jpeg" alt="Image 3" data-aos="fade-left">
+        <img src="/assets/imgs/Parque Nacional Hoge Veluwe 2.jpeg" alt="Image 4" data-aos="fade-right">
+        <img src="/assets/imgs/canais 2.jpeg" alt="Image 5" data-aos="fade-left">
+        <img src="/assets/imgs/canais 3.jpeg" alt="Image 6" data-aos="fade-right">
+        <img src="/assets/imgs/Keukenhof 1.jpeg" alt="" data-aos="fade-left">
+        <img src="/assets/imgs/Keukenhof.jpeg" alt="" data-aos="fade-right">
 
     </section>
-    <main>
-        <p>A combinação dessas atrações naturais, diversidade ecológica e engenharia inovadora não só promove o turismo,
+    <main id="final">
+        <p data-aos="fade-left">A combinação dessas atrações naturais, diversidade ecológica e engenharia inovadora não
+            só promove o turismo,
             mas também destaca a importância da conservação ambiental. A Holanda é um exemplo de como a interação
             harmoniosa entre o homem e a natureza pode criar um ambiente sustentável e atraente para visitantes de todo
             o mundo.</p>
+        <fieldset data-aos="fade-right">
+            <form action="" id="feedbackForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome silva" required><br>
+                <label for="email"></i> Email:</label>
+                <input type="email" id="email" name="email" placeholder="superbatata@gmail.com" required><br>
+                <label for="message">Ya oque voce achou desse lugar? voce planeja fazer uma viagem? </label> <br>
+                <textarea name="message" id="message" placeholder="A mensagenzinha"></textarea><br>
+                <button type="submit"> enviar</button>
+            </form>
+            <p id="feedbackMessage"></p>
+        </fieldset>
     </main>
-    <fieldset>
-        <form action="" id="feedbackForm">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email"></i> Email:</label>
-            <input type="email" id="email" name="email"><br>
-            <label for="message">Ya oque voce achou desse lugar? voce planeja fazer uma viagem 😼? </label> <br>
-            <textarea name="message" id="message" placeholder="é aqui ó"></textarea><br>
-            <button type="submit"></button>
-        </form>
-        <p id="feedbackMessage"></p>
-    </fieldset>
+
 
     <footer>
 

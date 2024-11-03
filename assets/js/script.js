@@ -1,3 +1,8 @@
+AOS.init({
+    duration: 1000, // Define a duração das animações
+    once: true // Anima apenas uma vez ao rolar a tela
+ });
+
 function toggleText()
 {
     var content = document.getElementById("content");
