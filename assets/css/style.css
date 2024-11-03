@@ -1,21 +1,23 @@
-
+/*Mains*/
 *{
     padding: 0;
     margin: 0;
     font-family: "Nanum Gothic Coding", monospace;
     
 }
-header{
-    background:#F96E78;
-    width: 100%;
-    height: 55px;
-    padding: 15px;
-    margin-bottom: 25px;    
-}
 body{
     border: 2px solid #F96E78;
     border-radius: 15px;
     
+}
+/*Menu*/
+header{
+    background:#F96E78;
+    width: 98%;
+    height: 55px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 15px;    
 }
 header img{
     width: 55px;
@@ -34,14 +36,16 @@ header a{
     animation-duration: 3s;
     animation-name: slidein;
     transition: .5s; 
+    border-radius: 5px;
    
 }
 
 header a:hover{
-    border-radius: 12px ;
+    border-radius: 0px 12px;
     background-color: #d14e57;
-
+    font-size: 1.6rem;
 }
+/*page*/
 main{
     padding: 45px;
   
@@ -62,12 +66,13 @@ main h1{
 }
 main p{
     font-size: 1.3rem;
+    transition: 4s;
 }
 main h1, main p{
-    text-shadow: -1px -1px 0 #fa7979, 1px -1px 0 #f09c9c, -1px 1px 0 #f78f8f, 1px 1px 0 #f79494; /* Cria uma sombra em cada direção */
+    text-shadow: -1px -1px 0 #fc5353, 1px -1px 0 #f78888, -1px 1px 0 #f78f8f, 1px 1px 0 #f79494; /* Cria uma sombra em cada direção */
 }
 .paralax{
-    background-image: url(https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmpxYXNjNG1jOW91Zzdxang2YzhkanEzYXdsNGNuN21xb2N2N3dtMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EuiC52tWm5yCc/giphy.gif);
+    background-image: url(/assets/imgs/paralax3.gif);
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -104,7 +109,7 @@ footer img{
     display: inline;
     width: 25px;
 }
-footer
+
 .header-p{
     padding: 5px;
     margin: 0;
@@ -116,9 +121,24 @@ iframe{
 }
 .container{
     text-align: center;
+    margin-bottom: 16px;
+}
+.container h2{
+    color: #fc5353;
+}
+.container ol{
+    list-style-type: none;
+    width: 90%;
+    margin: 20px;
+}
+.container ol li{
+    text-align: left;
+    color: #d14e57;
+    margin: 5px;
+    padding: 5px;
 }
 
-
+/*Response*/
 @media (max-width: 768px) {
     main {
         width: 80%;
@@ -181,4 +201,63 @@ iframe{
     .paralax{
         height: 300px;
     }
+
+}
+/*configs depois de implementar js*/
+#gallery img{
+    cursor: pointer;
+}
+#gallery h1{
+    font-size: 1.9rem;
+    text-overflow: ellipsis;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-rendering: geometricPrecision;
+}
+
+/* Estilo para o modal (lightbox) */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+}
+.active {
+    background-color: #d14e57;
+}
+fieldset{
+    text-align: center;
+    display: inline;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 15px;
+    border-color: #d14e57;
+    background-color: #e6cfcf;
+    padding: 15px;
+}
+#feedbackForm{
+      display: inline;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+}
+#feedbackForm label{
+    color: #d14e57;
+    font-size: 1.3rem;
+}
+#feedbackForm textarea{
+    color: #d14e57;
+    font-size: 1.3rem;
 }
