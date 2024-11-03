@@ -20,15 +20,4 @@ document.querySelectorAll('#gallery img').forEach(image => {
     });
 });
 
-fetch('/images')
-.then(response => response.json())
-.then(images => {
-    const gallery = document.getElementById('gallery');
-    images.forEach(url => {
-        const img = document.createElement('img');
-        img.src = url;
-        gallery.appendChild(img);
-    });
-})
-.catch(error => console.error('Error loading images:', error));
 
