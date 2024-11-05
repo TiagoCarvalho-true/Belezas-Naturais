@@ -1,23 +1,34 @@
-// Selecione todas as imagens dentro da seção da galeria
-document.querySelectorAll('#gallery img').forEach(image => {
-    image.addEventListener('click', () => {
-        // Cria o container da lightbox
-        const lightbox = document.createElement('div');
-        lightbox.classList.add('lightbox');
-        document.body.appendChild(lightbox);
+let currentIndex = 0;
+const images = document.querySelectorAll('.gallery-img');
+const modal = document.getElementById('modal');
+const modalImage = document.getElementById('modalImage');
+const imageIndex = document.getElementById('imageIndex');
 
-        // Adiciona a imagem clicada dentro do lightbox
-        const img = document.createElement('img');
-        img.src = image.src;
-        lightbox.appendChild(img);
+function openModal(index) {
+    currentIndex = index;
+    updateModalImage();
+    modal.style.display = "flex"; // Mostrar modal somente após clique
+}
 
-        // Remove a lightbox ao clicar fora da imagem
-        lightbox.addEventListener('click', (event) => {
-            if (event.target === lightbox) {
-                lightbox.remove();
-            }
-        });
-    });
+function closeModal() {
+    modal.style.display = "none"; // Fechar modal
+}
+
+function changeImage(step) {
+    currentIndex = (currentIndex + step + images.length) % images.length;
+    updateModalImage();
+}
+
+function updateModalImage() {
+    modalImage.src = images[currentIndex].src;
+    imageIndex.textContent = `${currentIndex + 1}/${images.length}`;
+}
+
+images.forEach((img, index) => {
+    img.addEventListener('click', () => openModal(index)); // Abre modal somente ao clicar
 });
+
+document.querySelector('.close').addEventListener('click', closeModal);
+
 
 

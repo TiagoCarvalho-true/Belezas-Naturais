@@ -75,20 +75,34 @@
         </ol>
     </div>
 
-    <section id="gallery">
+    <section id="gallery" class="gallery">
 
-        <h1 data-aos="zoom-in">Nossa Galeria de imagens do site 🤓</h1>
+        <h1 data-aos="zoom-in">Nossa Galeria de imagens do site 🤓</h1><br>
 
-        <img src="/assets/imgs/Dique Afsluitdijk 1.jpeg" alt="Image 1" data-aos="fade-left">
-        <img src="/assets/imgs/Dunas de Loonse e Drunense 1.jpeg" alt="Image 2" data-aos="fade-right">
-        <img src="/assets/imgs/Dunas de Loonse e Drunense.jpeg" alt="Image 3" data-aos="fade-left">
-        <img src="/assets/imgs/Parque Nacional Hoge Veluwe 2.jpeg" alt="Image 4" data-aos="fade-right">
-        <img src="/assets/imgs/canais 2.jpeg" alt="Image 5" data-aos="fade-left">
-        <img src="/assets/imgs/canais 3.jpeg" alt="Image 6" data-aos="fade-right">
-        <img src="/assets/imgs/Keukenhof 1.jpeg" alt="" data-aos="fade-left">
-        <img src="/assets/imgs/Keukenhof.jpeg" alt="" data-aos="fade-right">
+        <img src="/assets/imgs/Dique Afsluitdijk 1.jpeg" class="gallery-img" data-aos="fade-left">
+        <img src="/assets/imgs/Dunas de Loonse e Drunense 1.jpeg" class="gallery-img" data-aos="fade-right">
+        <img src="/assets/imgs/Dunas de Loonse e Drunense.jpeg" class="gallery-img" data-aos="fade-left">
+        <img src="/assets/imgs/Parque Nacional Hoge Veluwe 2.jpeg" class="gallery-img" data-aos="fade-right">
+        <img src="/assets/imgs/canais 2.jpeg" class="gallery-img" data-aos="fade-left">
+        <img src="/assets/imgs/canais 3.jpeg" class="gallery-img" data-aos="fade-right">
+        <img src="/assets/imgs/Keukenhof 1.jpeg" class="gallery-img" data-aos="fade-left">
+        <img src="/assets/imgs/Keukenhof.jpeg" class="gallery-img" data-aos="fade-right">
+       
+     
+          
 
     </section>
+    <div id="modal" class="modal" style="display: none;">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-navigation">
+            <button onclick="changeImage(-1)">&#10094;</button>
+            <span id="imageIndex"></span>
+            <button onclick="changeImage(1)">&#10095;</button>
+        </div>
+    </div>
+    
+    
     <main id="final">
         <p data-aos="fade-left">A combinação dessas atrações naturais, diversidade ecológica e engenharia inovadora não
             só promove o turismo,
