@@ -90,7 +90,7 @@ main p {
 }
 
 .paralax {
-    background-image: url(./assets/imgs/paralax3.gif);
+    background-image: url(assets/imgs/paralax3.gif);
     height: 500px;
     background-attachment: fixed;
     background-position: center;
