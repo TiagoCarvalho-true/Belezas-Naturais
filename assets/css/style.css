@@ -9,7 +9,16 @@
 body {
     border: 2px solid #F96E78;
     border-radius: 15px;
+    overflow-x: hidden; 
 
+}
+form,
+footer,
+iframe {
+    max-width: 100%;
+    width: auto; /* Ajusta automaticamente */
+    margin: 0 auto; /* Centraliza */
+    box-sizing: border-box; /* Inclui padding/margin no tamanho total */
 }
 
 /*Menu*/
@@ -162,30 +171,85 @@ iframe {
 
 /*Response*/
 @media (max-width: 768px) {
+    *{
+        margin: 0;
+    }
+    .container {
+        padding: 10px;
+      }
     main {
         width: 80%;
         margin-left: 5%;
         padding: 20px;
     }
+    header {
+        flex-direction: column;
+      }
+    
+      header nav {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+      }
+    
+      header nav a {
+        margin: 1px 35px;
+        font-size: 1em;
+      }
 
     section img {
         width: 100%;
+        
+    } 
+    #gallery {
+        gap: 10px;
+      }
+      fieldset{
+        margin: 110px;
+     }
+     #final p {
+        font-size: 1px;
+        visibility: hidden;
     }
-
-    header a {
-        margin: 40px;
-        font-size: 1.1rem;
-
-    }
-
+      form {
+        text-align: center;
+        padding: 5px;
+       
+      }
     iframe {
-        width: 100%;
-        height: auto;
+       left: auto;
+       right: auto;
+        flex-direction: column;
+        display: flex;
+
     }
+    footer{
+        text-align: center;
+        margin: 0;
+        width: 100%;
+       
+    }
+    footer img {
+        height: auto;
+      }
+      .paralax h1 {
+        font-size: 1.5em;
+      }
+    
+      .container {
+        padding: 10px;
+      }
 }
 
 /* Estilo para dispositivos com largura máxima de 480px */
 @media (max-width: 430px) {
+    h1, h2 {
+        font-size: 1.5em;
+      }
+    
+      .modal-navigation button {
+        font-size: 1.2em;
+      }
     header {
         height: auto;
         padding: 10px;
@@ -201,9 +265,7 @@ iframe {
         margin: 2px;
         font-size: 0.7rem;
         display: block;
-
     }
-
     main {
         width: 100%;
         margin-left: 0;
@@ -212,6 +274,18 @@ iframe {
 
     section {
         padding: 20px;
+    }
+    .gallery .gallery-img{
+        width: 150px;
+    }
+    .modal-content {
+        max-width: 50%;
+    }
+    #final fieldset{
+        width: 5px;
+    }
+    #final fieldset form{
+    
     }
 
     section h2 {
@@ -227,32 +301,37 @@ iframe {
     }
 
 }
-
 /*configs depois de implementar js*/
-
-
 #gallery h1 {
     font-size: 1.9rem;
     
     font-weight: 800;
-    margin-bottom: 15px;
-  
+    margin-bottom: 15px;  
 }
-
-
  /* Estilos para a galeria */
-.gallery {
+ .text-gallery{
+    text-align: center;
+ }
+ .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-
 .gallery img {
     cursor: pointer;
     width: 550px;
     height: auto;
     border-radius: 8px;
 }
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+.gallery-img:hover {
+    transform: scale(1.05);
+  }
 
 /* Estilos para o modal */
 .modal {
@@ -337,6 +416,18 @@ fieldset {
     justify-items: center;
     align-items: center;
 }
+fieldset {
+    width: 90%; 
+    max-width: 350px;
+    margin: 0 auto; 
+}
+
+#feedbackForm input,
+#feedbackForm textarea {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
 
 #feedbackForm label {
     color: #f0f8ff;
@@ -351,6 +442,12 @@ fieldset {
     width: 300px;
     height: 30px;
 }
+#feedbackForm button:hover {
+    background: #d14e57;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
 
 #feedbackForm textarea {
     color: #d14e57;
@@ -371,4 +468,26 @@ fieldset {
     border-bottom-color: #d14e57;
     background: #f89191;
     color: #f0f8ff;
+}
+header a:focus, .modal-navigation button:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+a, button {
+    transition: all 0.3s ease-in-out;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+footer fieldset {
+    max-width: 100%; /* Garante que as imagens no footer sejam responsivas */
+    height: auto; /* Mantém a proporção */
+}
+iframe {
+    width: 100%; /* Ocupará todo o espaço disponível */
+    max-width: 100%; /* Garante que não ultrapasse o container */
+    height: 380px; /* Ajusta automaticamente a altura */
 }
