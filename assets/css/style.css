@@ -90,7 +90,7 @@ main p {
 }
 
 .paralax {
-    background-image: url(/assets/imgs/paralax3.gif);
+    background-image: url(./assets/imgs/paralax3.gif);
     height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -284,10 +284,7 @@ iframe {
     #final fieldset{
         width: 5px;
     }
-    #final fieldset form{
-    
-    }
-
+   
     section h2 {
         font-size: 2rem;
     }
