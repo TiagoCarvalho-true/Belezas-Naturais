@@ -213,7 +213,7 @@ iframe {
     }
       form {
         text-align: center;
-        padding: 5px;
+        
        
       }
     iframe {
@@ -245,6 +245,10 @@ iframe {
 @media (max-width: 430px) {
     h1, h2 {
         font-size: 1.5em;
+      }
+      .paralax main h1,.paralax main p{
+        text-align: center;
+        font-size: 0.7rem;
       }
     
       .modal-navigation button {
@@ -281,9 +285,7 @@ iframe {
     .modal-content {
         max-width: 50%;
     }
-    #final fieldset{
-        width: 5px;
-    }
+  
    
     section h2 {
         font-size: 2rem;
